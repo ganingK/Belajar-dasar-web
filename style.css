@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+  background-image: linear-gradient(45deg, #cdf974 0%, #9bf6f0 100%);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+}
+
+main h1,
+main h2,
+main h3 {
+  text-align: center;
+}
+
+/* navigasi bar */
+.kucinggarong {
+  color: rgb(189, 224, 242);
+  background: lightskyblue;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+nav {
+  background: aquamarine;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 10px;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+nav ul li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+nav a:hover {
+  color: whitesmoke;
+  transition: 1s;
+}
+
+.popcorn {
+  position: absolute;
+  top: .75rem;
+  left: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+}
+
+.popcorn .line {
+  height: 3px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+/* aside */
+
+#aside {
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+}
+
+#aside h2,
+#aside figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.profile {
+  padding: 20px;
+}
+.display-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.profile .judul .institusi img {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+}
+.biodata {
+  text-align: center;
+  list-style: none;
+}
+#aside img {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/*konten */
+#konten {
+  flex: 4;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px;
+  justify-content: center;
+}
+
+.featured-image {
+  display: block;
+  margin: auto;
+  width: 50vw;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 15px 5px;
+  border-radius: 10px;
+  padding: 25px;
+}
+#kucingmahal figcaption {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.perawatan {
+  text-align: justify;
+}
+.list {
+  margin-left: 20px;
+}
+
+footer {
+  background: lightsalmon;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .popcorn {
+    display: flex;
+  }
+
+  .navigasi {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .navigasi ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navigasi li {
+    text-align: center;
+  }
+  .navigasi li a {
+    padding: .5rem 1rem;
+  }
+
+}
