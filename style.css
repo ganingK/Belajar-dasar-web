@@ -42,12 +42,10 @@ main h3 {
 }
 
 nav {
-  background: aquamarine;
+  background-color: aquamarine;
   display: flex;
   justify-content: center;
-  margin: 5px;
-  height: 50px;
-  width: 100%;
+  align-items: center;
   text-transform: uppercase;
   border-radius: 10px;
   position: relative;
@@ -57,7 +55,6 @@ nav ul {
   list-style: none;
   align-items: center;
   justify-content: center;
-  width: 50%;
 }
 nav ul li a {
   text-decoration: none;
@@ -148,7 +145,7 @@ nav a:hover {
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin: 15px 5px;
   border-radius: 10px;
-  padding: 25px;
+  padding: 20px;
 }
 #kucingmahal figcaption {
   text-align: center;
@@ -171,7 +168,7 @@ footer {
   justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .popcorn {
     display: flex;
   }
@@ -195,5 +192,8 @@ footer {
   .navigasi li a {
     padding: .5rem 1rem;
   }
-
+  .featured-image {
+    width: 300px;
+    height: 200px;
+  }
 }
